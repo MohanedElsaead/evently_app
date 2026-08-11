@@ -1,6 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:evently_app/providers/language_provider.dart';
+import 'package:evently_app/providers/theme_provider.dart';
 import 'package:evently_app/utils/approutes.dart';
+import 'package:evently_app/utils/apptheme.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'home/home.dart';
 
 void main() async{
@@ -10,8 +14,13 @@ void main() async{
       supportedLocales: [Locale('en'), Locale('ar')],
       path: 'assets/translations', // <-- change the path of the translation files
       fallbackLocale: Locale('en'),
-      startLocale: Locale('ar'),
-      child: MyApp()));
+      startLocale: Locale('en'),
+      child: MultiProvider(
+        providers: [
+          ChangeNotifierProvider(create: (context)=>AppLanguageProvider()),
+          ChangeNotifierProvider(create: (context)=>AppThemeProvider())
+        ],
+          child: MyApp())));
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +29,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    var languageProvider=Provider.of<AppLanguageProvider>(context);
+    var themeProvider=Provider.of<AppThemeProvider>(context);
+
     return MaterialApp(
+      theme: Apptheme.lightTheme,
+      darkTheme: Apptheme.darkTheme,
+      themeMode: themeProvider.appTheme,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
