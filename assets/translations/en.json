@@ -5,5 +5,8 @@
   "theme": "Theme",
   "dark": "Dark",
   "light": "Light",
-  "logout": "Logout"
+  "logout": "Logout",
+  "home": "Home",
+  "favorite": "Favorite",
+  "profile": "Profile"
 }

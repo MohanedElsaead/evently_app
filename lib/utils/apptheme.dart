@@ -12,6 +12,10 @@ class Apptheme {
           selectedLabelStyle: AppStyles.Regular12MainLightColor,
             unselectedLabelStyle: AppStyles.Regular12GreyColor
           ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Appcolors.MainLightColor,
+        shape: StadiumBorder()
+    ),
     cardColor: Appcolors.MainLightColor,
     dividerColor: Appcolors.StrokeWhiteColor,
       textTheme: TextTheme(
@@ -37,6 +41,10 @@ class Apptheme {
           unselectedItemColor: Appcolors.Disable,
           selectedLabelStyle: AppStyles.Regular12MainDarkColor,
           unselectedLabelStyle: AppStyles.Regular12GreyColor
+      ),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Appcolors.MainDarkColor,
+        shape: StadiumBorder()
       ),
       cardColor: Appcolors.MainDarkColor,
       dividerColor: Appcolors.MainLightColor,
