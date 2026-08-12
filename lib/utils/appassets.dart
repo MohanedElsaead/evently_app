@@ -17,4 +17,7 @@ class Appassets {
   static const String MeetingDark="assets/events_dark/meeting.png";
   static const String SportDark="assets/events_dark/sport.png";
   static const String GoogleIcon="assets/images/googleicon.png";
+  static const String EventlyLogoDark="assets/images/EventlyDark.png";
+  static const String SmallEventlyLogoLight="assets/images/SmallLogoLight.png";
+  static const String SmallEventlyLogoDark="assets/images/SmallLogoDark.png";
 }

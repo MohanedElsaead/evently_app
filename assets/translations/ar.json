@@ -8,5 +8,20 @@
   "logout": "تسجيل الخروج",
   "home": "الرئيسي",
   "favorite": "المفضل",
-  "profile": "الملف الشخصي"
+  "profile": "الملف الشخصي",
+  "login to your account": "سجل الدخول لحسابك",
+  "please enter email": "أدخل البريد الإلكتروني",
+  "please enter repassword": "أدخل تأكيد كلمة المرور",
+  "please enter name": "أدخل الاسم",
+  "please enter password": "أدخل كلمة المرور",
+  "please enter description": "أدخل الوصف",
+  "please enter title": "أدخل العنوان",
+  "please enter valid email": "أدخل بريدًا إلكترونيًا صحيحًا",
+  "password": "كلمة المرور",
+  "forget password": "هل نسيت كلمة المرور ؟",
+  "login": "سجل الدخول",
+  "dont have account": "ليس لديك حساب ؟",
+  "sign up": "انشأ حساب",
+  "or":"أو",
+  "login with google": "سجل الدخول بجوجل"
 }
