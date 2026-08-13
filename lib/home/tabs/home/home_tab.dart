@@ -1,3 +1,5 @@
+import 'package:easy_localization/easy_localization.dart';
+import 'package:evently_app/utils/size_utils.dart';
 import 'package:flutter/cupertino.dart';
 
 class HomeTab extends StatelessWidget {
@@ -5,8 +7,26 @@ class HomeTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(
-      color: CupertinoColors.activeBlue,
+    var height =context.height;
+    var width =context.width;
+    return Padding(padding:
+    EdgeInsetsGeometry.symmetric(
+      horizontal: width*0.04,
+      vertical: height*0.04,
+    ),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Column(
+                children: [
+                  Text("welcome back".tr()),
+                ],
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }

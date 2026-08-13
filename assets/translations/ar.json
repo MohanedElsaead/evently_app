@@ -23,5 +23,10 @@
   "dont have account": "ليس لديك حساب ؟",
   "sign up": "انشأ حساب",
   "or":"أو",
-  "login with google": "سجل الدخول بجوجل"
+  "login with google": "سجل الدخول بجوجل",
+  "create your account": "انشئ حسابك الشخصي",
+  "confirm your password": "تأكيد كلمة المرور",
+  "already have and account": "لديك حساب بالفعل ؟",
+  "sign up with google": "انشئ حساب بواسطة جوجل",
+  "welcome back": "اهلا بعودتك"
 }

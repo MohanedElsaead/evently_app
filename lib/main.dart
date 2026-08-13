@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:evently_app/login/loginPage.dart';
 import 'package:evently_app/providers/language_provider.dart';
 import 'package:evently_app/providers/theme_provider.dart';
+import 'package:evently_app/register/registerPage.dart';
 import 'package:evently_app/utils/approutes.dart';
 import 'package:evently_app/utils/apptheme.dart';
 import 'package:flutter/material.dart';
@@ -41,10 +42,11 @@ class MyApp extends StatelessWidget {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.LoginScreen,
+      initialRoute: AppRoutes.HomeScreen,
       routes: {
         AppRoutes.HomeScreen:(context)=>HomeScreen(),
         AppRoutes.LoginScreen:(context)=>Loginpage(),
+        AppRoutes.RegisterScreen:(context)=>RegisterPage(),
       },
     );
   }
