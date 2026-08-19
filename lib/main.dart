@@ -1,4 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:evently_app/Onboarding/introductionScreen.dart';
+import 'package:evently_app/Onboarding/onboardingScreen1.dart';
 import 'package:evently_app/login/loginPage.dart';
 import 'package:evently_app/providers/language_provider.dart';
 import 'package:evently_app/providers/theme_provider.dart';
@@ -6,7 +8,10 @@ import 'package:evently_app/register/registerPage.dart';
 import 'package:evently_app/utils/approutes.dart';
 import 'package:evently_app/utils/apptheme.dart';
 import 'package:flutter/material.dart';
+import 'package:introduction_screen/introduction_screen.dart';
 import 'package:provider/provider.dart';
+import 'Onboarding/onboardingScreen2.dart';
+import 'Onboarding/onboardingScreen3.dart';
 import 'home/home.dart';
 
 void main() async{
@@ -42,11 +47,15 @@ class MyApp extends StatelessWidget {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.HomeScreen,
+      initialRoute: AppRoutes.IntroductionScreen,
       routes: {
         AppRoutes.HomeScreen:(context)=>HomeScreen(),
         AppRoutes.LoginScreen:(context)=>Loginpage(),
         AppRoutes.RegisterScreen:(context)=>RegisterPage(),
+        AppRoutes.IntroductionScreen:(context)=>Introductionscreen(),
+        AppRoutes.OnboardingScreen1:(context)=>OnboardingScreen1(),
+        AppRoutes.OnboardingScreen2:(context)=>OnboardingScreen2(),
+        AppRoutes.OnboardingScreen3:(context)=>OnboardingScreen3(),
       },
     );
   }

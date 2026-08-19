@@ -31,6 +31,11 @@ class Apptheme {
         titleLarge: AppStyles.Regular14MainLightColor,
         titleMedium: AppStyles.Medium20BlackColor,
         titleSmall: AppStyles.Medium18Black,
+          displayMedium: AppStyles.Medium18White
+      ),
+      appBarTheme: AppBarThemeData(
+      backgroundColor: Appcolors.LightBGColor,
+
   )
   );
   static final ThemeData darkTheme=ThemeData(
@@ -61,6 +66,11 @@ class Apptheme {
         titleLarge: AppStyles.Regular14MainDarkColor,
         titleMedium: AppStyles.Medium20WhiteDarkColor,
         titleSmall: AppStyles.Medium18White,
-      )
+        displayMedium: AppStyles.Medium18White
+      ),
+
+    appBarTheme: AppBarThemeData(
+    backgroundColor: Appcolors.DarkBgColor,
+  )
   );
 }

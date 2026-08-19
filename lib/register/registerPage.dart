@@ -2,7 +2,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:evently_app/providers/theme_provider.dart';
 import 'package:evently_app/utils/appassets.dart';
 import 'package:evently_app/utils/appcolors.dart';
-import 'package:evently_app/utils/approutes.dart';
 import 'package:evently_app/utils/appstyles.dart';
 import 'package:evently_app/utils/size_utils.dart';
 import 'package:evently_app/widgets/custom_elevated_button.dart';
