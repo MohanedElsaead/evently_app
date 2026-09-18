@@ -42,6 +42,9 @@ dependencies:
   provider: ^6.1.5+1
   flutter_native_splash: ^2.4.7
   introduction_screen: ^4.0.0
+  firebase_core: ^4.1.1
+  firebase_auth: ^6.6.1
+  cloud_firestore: ^6.10.0
 
 dev_dependencies:
   flutter_test:

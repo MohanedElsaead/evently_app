@@ -4,7 +4,9 @@ import 'package:evently_app/home/tabs/home/home_tab.dart';
 import 'package:evently_app/home/tabs/profile/profile_tab.dart';
 import 'package:evently_app/home/theme_bottom_sheet.dart';
 import 'package:evently_app/providers/theme_provider.dart';
+import 'package:evently_app/providers/user_provider.dart';
 import 'package:evently_app/utils/appcolors.dart';
+import 'package:evently_app/utils/approutes.dart';
 import 'package:evently_app/utils/size_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +34,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: tabList[selectedIndex],
       floatingActionButton: FloatingActionButton(
-          onPressed: (){},
+          onPressed: (){
+            Navigator.of(context).pushNamed(AppRoutes.AddEvent);
+          },
               child: Icon(Icons.add,color: Appcolors.WhiteColor,size: 30,),
       ),
       bottomNavigationBar: BottomNavigationBar(

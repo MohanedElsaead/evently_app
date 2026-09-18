@@ -7,4 +7,7 @@ class AppRoutes {
   static const String OnboardingScreen1="Onboarding Screen1";
   static const String OnboardingScreen2="Onboarding Screen2";
   static const String OnboardingScreen3="Onboarding Screen3";
+  static const String AddEvent="Add Event";
+  static const String EventDetailsScreen="Event Details Screen";
+  static const String EditEventScreen="Edit Event Screen";
 }

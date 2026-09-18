@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:evently_app/providers/theme_provider.dart';
+import 'package:evently_app/providers/user_provider.dart';
 import 'package:evently_app/utils/appassets.dart';
 import 'package:evently_app/utils/appcolors.dart';
 import 'package:evently_app/utils/size_utils.dart';
@@ -20,12 +21,15 @@ class ProfileTab extends StatefulWidget {
 class _ProfileTabState extends State<ProfileTab> {
   double? height;
   double? width;
+
   @override
   Widget build(BuildContext context) {
       height=context.height;
       width=context.width;
       var themeProvider=Provider.of<AppThemeProvider>(context);
-    return Scaffold(
+      var userProvider=Provider.of<UserProvider>(context);
+
+      return Scaffold(
     body: SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -37,8 +41,8 @@ class _ProfileTabState extends State<ProfileTab> {
             radius: 50,
             backgroundImage:AssetImage(Appassets.RouteIcon),
           ),
-          Text("Route Academy",style: Theme.of(context).textTheme.headlineLarge,),
-          Text("route@gmail.com",style: Theme.of(context).textTheme.bodyLarge,),
+          Text(userProvider.currentUser?.name??"",style: Theme.of(context).textTheme.headlineLarge,),
+          Text(userProvider.currentUser?.email??"",style: Theme.of(context).textTheme.bodyLarge,),
           _buildItemWidget(isDark: themeProvider.isDark,text: "dark".tr(), item: Switch(
             activeTrackColor: Appcolors.MainDarkColor,
               activeThumbColor: Appcolors.WhiteColor,

@@ -98,6 +98,12 @@ class AppStyles{
       fontWeight: FontWeight.w500,
       color: Appcolors.BlackColor
   );
+
+  static TextStyle Medium20WhiteColor = GoogleFonts.poppins(
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
+      color: Appcolors.WhiteColor
+  );
   static TextStyle Medium20WhiteDarkColor = GoogleFonts.poppins(
       fontSize: 20,
       fontWeight: FontWeight.w500,
@@ -138,6 +144,16 @@ class AppStyles{
       fontSize: 20,
       fontWeight: FontWeight.w700,
       color: Appcolors.BlackColor
+  );
+  static TextStyle Semi20White = GoogleFonts.poppins(
+      fontSize: 20,
+      fontWeight: FontWeight.w700,
+      color: Appcolors.WhiteColor
+  );
+  static TextStyle Semi14White = GoogleFonts.poppins(
+      fontSize: 14,
+      fontWeight: FontWeight.w700,
+      color: Appcolors.WhiteColor
   );
 
 }
