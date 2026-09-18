@@ -3,6 +3,7 @@ import 'package:evently_app/providers/theme_provider.dart';
 import 'package:evently_app/providers/user_provider.dart';
 import 'package:evently_app/utils/appassets.dart';
 import 'package:evently_app/utils/appcolors.dart';
+import 'package:evently_app/utils/approutes.dart';
 import 'package:evently_app/utils/size_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,7 @@ class _ProfileTabState extends State<ProfileTab> {
                   icon: Icon(Icons.arrow_forward_outlined,color: Theme.of(context).cardColor,))),
           _buildItemWidget(isDark: themeProvider.isDark,text: "logout".tr(),
               item: IconButton(onPressed: (){
-                
+                Navigator.of(context).popAndPushNamed(AppRoutes.LoginScreen);
               },
                   icon:Icon(Icons.login_outlined,color: Appcolors.Red,))),
       ],
